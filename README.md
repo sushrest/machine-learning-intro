@@ -1,9 +1,8 @@
-# machine-learning-intro
-Machine Learning Intro 
+# Machine Learning Intro Tensorflow & scikit-learn
 
 Files in this repository demonstrates a basic Machine Learning examples using scikit-learn and Tensorflow Library
 
-Files & Features 
+# Files & Features 
 
 decisiontree.py
 Supervised Learning by making use of Decision Tree Classifier and its fit algorithm to predict whether the given
