@@ -30,7 +30,9 @@ from scipy.spatial import distance
 def euc(a,b): # here b is a point from test data and a is from training data
     return distance.euclidean(a,b)
 
+# Define classifier class ScrappyKNN 
 class ScrappyKNN():
+
     def fit(self, X_train, y_train):
         self.X_train = X_train
         self.y_train = y_train
@@ -42,6 +44,7 @@ class ScrappyKNN():
             predictions.append(label)
         return predictions
 
+    # By using Euclidean function pick the nearest point to the test point
     def closest(self, row):
         best_dist = euc(row, self.X_train[0])
         best_index = 0
