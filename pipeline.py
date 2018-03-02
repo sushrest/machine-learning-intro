@@ -22,6 +22,9 @@ my_classifier = tree.DecisionTreeClassifier()
 
 # Using KNeighbors Classifier 
 # disable DecisionTree Classifier to test this.
+# Just by enabling and disabling the 2 lines of code by switching between Classifiers
+# We can get similar results, this shows that switching between different 
+# types of classifier 
 # from sklearn.neighbors import KNeighborsClassifier
 # my_classifier = KNeighborsClassifier()
 
@@ -36,3 +39,15 @@ predictions = my_classifier.predict(X_test)
 from sklearn.metrics import accuracy_score
 
 print accuracy_score(y_test, predictions)
+
+# What it means to learn from data 
+# Features    Label
+#   f(x)    =   y
+# def classify(features): 
+#   # do some logic
+#   return label
+
+# Equation of a line
+# y=mx+b #where m is slope and b is y intercept
+# 
+# One way to think of training it to adjust the parameters of the model
