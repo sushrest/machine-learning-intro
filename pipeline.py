@@ -50,4 +50,14 @@ print accuracy_score(y_test, predictions)
 # Equation of a line
 # y=mx+b #where m is slope and b is y intercept
 # 
-# One way to think of training it to adjust the parameters of the model
+# One way to think of learning is to adjust the parameters of the model using the training data
+
+# We wanna consider a function where it takes a point x,y and find out if its belongs to the 
+# red or green. Also x,y has never introduced to a classifier. So can the classifier predict 
+# the right label green or red? Imagine we crossed a line between the two groups of points red 
+# or green and this line can serve as a classifier. So how can we learn this line?
+# One way to do this is to adjust the parameters of the model using the training data, and lets 
+# say the model we use is the simple straight line. That means we have two parameters to 
+# adjust m and b where m is the slope and b is the y intercept. So how can we learn the right 
+# parameters m and b, well one way to do is to iteratively adjust the parameter m and b using the 
+# learning data.
